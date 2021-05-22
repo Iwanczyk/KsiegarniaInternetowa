@@ -34,7 +34,7 @@
            Screen przedstawiający ekran logowania/rejestracji użytkownika
 	   
    <p>Przy uruchomieniu aplikacji pojawia się ekran logowania. Użytkownik posiadający konto może wprowadzić swój login oraz hasło, aby się zalogować i przejść do głównej części aplikacji. Jeśli osoba nie posiada konta, może je założyć, wypełniając odpowiednie linie swoimi danymi. Podczas logowania aplikacja weryfikuje poprawność danych z tymi, które znajdują się w bazie danych, odpowiednio komunikując użytkownikowi wszelkie problemy. </p>
-  <p>Podczas rejestracji nowego konta aplikacja weryfikuje, czy wszystkie pola zostały w odpowiedni sposób wypełnione. Program weryfikuje, czy w polach nie znajdują się białe znaki, oraz sprawdza ich długość, aby nie doprowadzić do konfliktu z bazą danych. Przy próbie stworzenia nowego konta następuje weryfikacja, czy podany przez użytkownika login jest wolny. Jeśli weryfikacja danych przy logowaniu/rejestracji przejdzie pomyślnie, użytkownik zostanie zalogowany, a ekran logowania zmieni się na ekrean główny</p>
+  <p>Podczas rejestracji nowego konta aplikacja weryfikuje, czy wszystkie pola zostały w odpowiedni sposób wypełnione. Program weryfikuje, czy w polach nie znajdują się białe znaki, oraz sprawdza ich długość, aby nie doprowadzić do konfliktu z bazą danych. Przy próbie stworzenia nowego konta następuje weryfikacja, czy podany przez użytkownika login jest wolny. Jeśli weryfikacja danych przy logowaniu/rejestracji przejdzie pomyślnie, użytkownik zostanie zalogowany, a ekran logowania zmieni się na ekrean główny.</p>
    
    </details>
    <details>
@@ -59,7 +59,7 @@
 
            Screen przedstawiający listę umożlwiającą sortowanie książeg według gatunku
   
-  <p>Użytkownik ma także możliwość sortowania asortymentu poprzez gatunek, jaki go interesuje. Aby tego dokonać należy rozwinąć listę, gdzie znajdują się wszystkie gatunki, jakie sklep ma aktualnie w swoim asortymencie (dane te zostają załadowane z bazy danych). Po wybraniu odpowiedniego gatunku oraz kliknięciu przycisku "Wyszukaj" w tabeli pojawią się jedynie książki z wybranego gatunku</p>
+  <p>Użytkownik ma także możliwość sortowania asortymentu poprzez gatunek, jaki go interesuje. Aby tego dokonać należy rozwinąć listę, gdzie znajdują się wszystkie gatunki, jakie sklep ma aktualnie w swoim asortymencie (dane te zostają załadowane z bazy danych). Po wybraniu odpowiedniego gatunku oraz kliknięciu przycisku "Wyszukaj" w tabeli pojawią się jedynie książki z wybranego gatunku.</p>
   
 ![alt text](https://github.com/Iwanczyk/KsiegarniaInternetowa/blob/main/img/ekranGlowny3.PNG "Ekran główny - Horror")
   
@@ -132,12 +132,12 @@
 
            Screen przedstawiający panel administratora.
 	   
-   <p>Aplikacja posiada także panel administratora, aby się do niego dostać należy przy logowaniu wpisać w polu login: <b>admin</b>, a w polu hasło: <b>admin</b>(w planach jest weryfikacja danych admina poprzez dane pochodzące z bazy danych oraz rozszerzenie odpowiednich kont o role - Administracja, Moderacja, Użytkownik).</p>
+   <p>Aplikacja posiada także panel administratora, aby się do niego dostać należy przy logowaniu wpisać w polu login: <b>admin</b>, a w polu hasło: <b>admin</b> (w planach jest weryfikacja danych admina poprzez dane pochodzące z bazy danych oraz rozszerzenie odpowiednich kont o role - Administracja, Moderacja, Użytkownik).</p>
   <p>Panel administratora umożliwia zarządzanie asortymentem sklepu (wyświetlenie asortymentu, dodawanie pozycji oraz edycja i usuwanie książek zarówno w asortymencie, jak i bazie danych).</p>
   
   ![alt text](https://github.com/Iwanczyk/KsiegarniaInternetowa/blob/main/img/adminPanel2.PNG "Admin Panel")
 	   
-   <p>Analogicznie, administrator może zarządzać użytkownikami, którzy posiadają konto. Admin może dodawać, usuwać i edytować konta użytkowników. (W planach jest poprawa bezpieczeństwa aplikacji oraz wrażliwych danych użytkowników)</p>
+   <p>Analogicznie, administrator może zarządzać użytkownikami, którzy posiadają konto. Admin może dodawać, usuwać i edytować konta użytkowników. (W planach jest poprawa bezpieczeństwa aplikacji oraz wrażliwych danych użytkowników).</p>
    </details>
    
    
