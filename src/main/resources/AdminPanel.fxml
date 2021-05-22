@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="661.0" prefWidth="813.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AdminPanelController">
+   <children>
+      <TabPane prefHeight="694.0" prefWidth="863.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Asortyment">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="710.0" prefWidth="938.0">
+                     <children>
+                        <TableView fx:id="adminTable" layoutX="6.0" layoutY="14.0" prefHeight="372.0" prefWidth="849.0">
+                          <columns>
+                            <TableColumn fx:id="adminColID" editable="false" prefWidth="34.39999485015869" text="ID" />
+                            <TableColumn fx:id="adminColTitle" editable="false" prefWidth="219.20001220703125" text="Tytuł" />
+                              <TableColumn fx:id="adminColAuthor" editable="false" prefWidth="182.39996337890625" text="Autor" />
+                              <TableColumn fx:id="adminColType" editable="false" prefWidth="165.5999755859375" text="Gatunek" />
+                              <TableColumn fx:id="adminColIsAvalible" editable="false" prefWidth="163.20001220703125" text="Dostępność" />
+                              <TableColumn fx:id="adminColPrice" editable="false" prefWidth="85.60009765625" text="Cena" />
+                          </columns>
+                        </TableView>
+                        <AnchorPane fx:id="addPositionField" layoutX="6.0" layoutY="427.0" prefHeight="114.0" prefWidth="849.0" styleClass="bookEditFIeld">
+                           <children>
+                              <TextField fx:id="adminColTitleAddField" layoutX="14.0" layoutY="14.0" promptText="Tytuł" />
+                              <TextField fx:id="adminColAuthorAddField" layoutX="177.0" layoutY="14.0" promptText="Autor" />
+                              <TextField fx:id="adminColTypeAddField" layoutX="339.0" layoutY="14.0" promptText="Gatunek" />
+                              <TextField fx:id="adminColIsActiveAddField" layoutX="503.0" layoutY="14.0" promptText="Dostępność" />
+                              <TextField fx:id="adminColPriceAddField" layoutX="663.0" layoutY="14.0" promptText="Cena" />
+                              <Button fx:id="addBookButton" layoutX="310.0" layoutY="57.0" mnemonicParsing="false" onAction="#AddBook" prefHeight="12.0" prefWidth="210.0" styleClass="adminButton" text="Dodaj" />
+                              <Label fx:id="errorAddLabel" layoutX="524.0" layoutY="64.0" prefHeight="26.0" prefWidth="278.0" styleClass="adminInfo" text="Błąd! " visible="false" />
+                              <Label fx:id="successAddLabel" layoutX="538.0" layoutY="64.0" prefHeight="26.0" prefWidth="81.0" text="Sukces!" visible="false" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="editPositionField" layoutX="7.0" layoutY="544.0" prefHeight="107.0" prefWidth="849.0" styleClass="bookEditFIeld">
+                           <children>
+                              <TextField fx:id="adminColIdEditField" layoutX="14.0" layoutY="14.0" prefHeight="30.0" prefWidth="69.0" promptText="ID" />
+                              <TextField fx:id="adminColTitleEditField" layoutX="93.0" layoutY="14.0" promptText="Tytuł" />
+                              <TextField fx:id="adminColAuthorEditField" layoutX="255.0" layoutY="14.0" promptText="Autor" />
+                              <TextField fx:id="adminColTypeEditField" layoutX="423.0" layoutY="14.0" promptText="Gatunek" />
+                              <TextField fx:id="adminColIsActiveEditField" layoutX="587.0" layoutY="14.0" prefHeight="30.0" prefWidth="114.0" promptText="Dostępność" />
+                              <TextField fx:id="adminColPriceEditField" layoutX="715.0" layoutY="14.0" prefHeight="30.0" prefWidth="101.0" promptText="Cena" />
+                              <Button fx:id="editBookButton" layoutX="197.0" layoutY="54.0" mnemonicParsing="false" onAction="#EditBook" prefHeight="12.0" prefWidth="210.0" styleClass="adminButton" text="Edytuj" />
+                              <Button fx:id="deleteBookButton" layoutX="415.0" layoutY="54.0" mnemonicParsing="false" onAction="#DeleteBook" prefHeight="12.0" prefWidth="210.0" styleClass="adminButton" text="Usuń" />
+                              <Label fx:id="errorEditLabel" layoutX="715.0" layoutY="61.0" prefHeight="26.0" prefWidth="126.0" styleClass="adminInfo" text="Błąd! " visible="false" />
+                              <Label fx:id="successEditLabel" layoutX="644.0" layoutY="61.0" prefHeight="26.0" prefWidth="81.0" text="Sukces!" visible="false" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Użytkownicy">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="adminUsersTab" layoutX="14.0" layoutY="14.0" prefHeight="370.0" prefWidth="835.0">
+                          <columns>
+                            <TableColumn fx:id="adminUserId" editable="false" prefWidth="32.000030517578125" text="ID" />
+                            <TableColumn fx:id="adminUserName" editable="false" prefWidth="95.20004272460938" text="Imię" />
+                              <TableColumn fx:id="adminUserLastname" editable="false" minWidth="0.0" prefWidth="164.79995727539062" text="Nazwisko" />
+                              <TableColumn fx:id="adminUserEmail" editable="false" prefWidth="231.199951171875" text="Email" />
+                              <TableColumn fx:id="adminUserLogin" editable="false" prefWidth="151.2000732421875" text="Login" />
+                              <TableColumn fx:id="adminUserPassword" editable="false" prefWidth="161.5999755859375" text="Hasło" />
+                          </columns>
+                        </TableView>
+                        <AnchorPane fx:id="addUserField" layoutX="14.0" layoutY="422.0" prefHeight="114.0" prefWidth="830.0" styleClass="bookEditFIeld">
+                           <children>
+                              <TextField fx:id="adminColUserNameAddField" layoutX="14.0" layoutY="14.0" promptText="Imię" />
+                              <TextField fx:id="adminColUserAddNameField" layoutX="177.0" layoutY="14.0" promptText="Nazwisko" />
+                              <TextField fx:id="adminColUserAddEmailField" layoutX="339.0" layoutY="14.0" promptText="Email" />
+                              <TextField fx:id="adminColUserAddLoginField" layoutX="503.0" layoutY="14.0" promptText="Login" />
+                              <TextField fx:id="adminColUserAddPasswordField" layoutX="663.0" layoutY="14.0" promptText="Hasło" />
+                              <Button fx:id="addUserButton" layoutX="310.0" layoutY="57.0" mnemonicParsing="false" onAction="#AddUser" prefHeight="12.0" prefWidth="210.0" styleClass="adminButton" text="Dodaj" />
+                              <Label fx:id="errorAddUserLabel" layoutX="547.0" layoutY="69.0" prefHeight="26.0" prefWidth="278.0" styleClass="adminInfo" text="Błąd! " visible="false" />
+                              <Label fx:id="successAddUserLabel" layoutX="560.0" layoutY="69.0" prefHeight="26.0" prefWidth="81.0" text="Sukces!" visible="false" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="editUserField" layoutX="14.0" layoutY="542.0" prefHeight="107.0" prefWidth="830.0" styleClass="bookEditFIeld">
+                           <children>
+                              <TextField fx:id="adminColIdEditUserField" layoutX="14.0" layoutY="14.0" prefHeight="30.0" prefWidth="69.0" promptText="ID" />
+                              <TextField fx:id="adminColNameEditField" layoutX="93.0" layoutY="14.0" promptText="Imię" />
+                              <TextField fx:id="adminColLastnameEditField" layoutX="255.0" layoutY="14.0" promptText="Nazwisko" />
+                              <TextField fx:id="adminColEmailEditField" layoutX="423.0" layoutY="14.0" promptText="Email" />
+                              <TextField fx:id="adminColLoginEditField" layoutX="587.0" layoutY="14.0" prefHeight="30.0" prefWidth="114.0" promptText="Login" />
+                              <TextField fx:id="adminColPasswordEditField" layoutX="715.0" layoutY="14.0" prefHeight="30.0" prefWidth="101.0" promptText="Hasło" />
+                              <Button fx:id="editUserButton" layoutX="197.0" layoutY="54.0" mnemonicParsing="false" onAction="#EditUser" prefHeight="12.0" prefWidth="210.0" styleClass="adminButton" text="Edytuj" />
+                              <Button fx:id="deleteUserButton" layoutX="415.0" layoutY="54.0" mnemonicParsing="false" onAction="#DeleteUser" prefHeight="12.0" prefWidth="210.0" styleClass="adminButton" text="Usuń" />
+                              <Label fx:id="errorEditUserLabel" layoutX="703.0" layoutY="60.0" prefHeight="26.0" prefWidth="126.0" styleClass="adminInfo" text="Błąd! " visible="false" />
+                              <Label fx:id="successEditUserLabel" layoutX="644.0" layoutY="60.0" prefHeight="26.0" prefWidth="81.0" text="Sukces!" visible="false" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

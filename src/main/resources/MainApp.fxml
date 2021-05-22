@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MainAppController">
+   <children>
+      <TableView fx:id="mainTable" layoutX="9.0" layoutY="100.0" prefHeight="606.0" prefWidth="1262.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="99.0">
+        <columns>
+            <TableColumn fx:id="columnBookId" editable="false" minWidth="0.0" prefWidth="48.79998856782913" text="ID" visible="false" />
+          <TableColumn fx:id="columnTitle" editable="false" minWidth="100.0" prefWidth="390.9332847595215" text="Tytuł" />
+          <TableColumn fx:id="columnAuthor" editable="false" minWidth="120.0" prefWidth="345.0667724609375" text="Autor" />
+            <TableColumn fx:id="columnType" editable="false" minWidth="50.0" prefWidth="264.2667236328125" text="Gatunek" />
+            <TableColumn fx:id="columnIsAvalible" editable="false" minWidth="50.0" prefWidth="159.7332763671875" text="Dostępność" />
+            <TableColumn fx:id="columnPrice" editable="false" minWidth="50.0" prefWidth="106.4000244140625" text="Cena" />
+        </columns>
+      </TableView>
+      <TextField fx:id="search" layoutX="9.0" layoutY="59.0" prefHeight="26.0" prefWidth="602.0" promptText="Wpisz tytuł lub autora" />
+      <ComboBox fx:id="categories" layoutX="611.0" layoutY="59.0" prefHeight="26.0" prefWidth="170.0" promptText="Wybierz kategorię" />
+      <Button fx:id="searchButton" layoutX="784.0" layoutY="60.0" mnemonicParsing="false" onAction="#SearchBooks" prefHeight="27.0" prefWidth="102.0" text="Wyszukaj" />
+      <MenuBar fx:id="menuBar" layoutY="1.0" prefHeight="26.0" prefWidth="829.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
+        <menus>
+          <Menu fx:id="programMenu" mnemonicParsing="false" text="Program">
+               <items>
+                  <MenuItem fx:id="exitProgram" mnemonicParsing="false" onAction="#Exit" text="Zamknij program" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="Konto">
+               <items>
+                  <MenuItem fx:id="editPersonalData" mnemonicParsing="false" onAction="#EditAccountData" text="Edytuj dane" />
+                  <MenuItem fx:id="deleteAccount" mnemonicParsing="false" onAction="#DeleteUser" text="Usuń konto" />
+               </items>
+            </Menu>
+          <Menu fx:id="shopcart" mnemonicParsing="false" text="Koszyk">
+            <items>
+              <MenuItem fx:id="saveShopcart" mnemonicParsing="false" onAction="#SaveShopCart" text="Zapisz koszyk" />
+                  <MenuItem fx:id="openShopcart" mnemonicParsing="false" onAction="#OpenShopCart" text="Otwórz zapisany koszyk" />
+                  <MenuItem fx:id="showShopcart" mnemonicParsing="false" onAction="#ShowShopCart" text="Pokaż koszyk" />
+                  <MenuItem fx:id="deleteShopCart" disable="true" mnemonicParsing="false" onAction="#DeleteShopCart" text="Usuń zawartość koszyka" visible="false" />
+            </items>
+          </Menu>
+          <Menu fx:id="help" mnemonicParsing="false" text="Pomoc">
+            <items>
+              <MenuItem fx:id="about" mnemonicParsing="false" onAction="#OpenAbout" text="O programie i autorach" />
+                  <MenuItem fx:id="instruction" mnemonicParsing="false" onAction="#OpenInstruction" text="Instrukcja" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Button fx:id="addToCartbutton" layoutX="889.0" layoutY="60.0" mnemonicParsing="false" onAction="#AddToCartAction" prefHeight="27.0" prefWidth="122.0" text="Dodaj do koszyka" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,252 @@
+/* Ekran logowania */
+.root
+{
+    /* Background pattern from Toptal Subtle Patterns */
+    -fx-background-image: url("hexellence.png");
+
+}
+.anchor
+{
+    /* Background pattern from Toptal Subtle Patterns */
+    -fx-background-image: url("hexellence.png");
+    
+}
+.button
+{
+    -fx-text-alignment: center;
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-background-color:  #36B03C;
+    -fx-padding: 15px;
+    -fx-background-radius: 25px;
+    -fx-cursor: hand;
+    -fx-spacing: 5px;
+}
+.button:hover
+{
+    -fx-background-color: #37B93D;
+    
+}
+.label
+{
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+    -fx-text-fill: #36B03C;
+    -fx-font-size: 16px;
+    -fx-alignment: center;
+    
+}
+.text-field
+{
+    -fx-background-color: #EFEFEF;
+    -fx-text-fill: #666666;
+    -fx-border-color: #DDDDDD;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    /*-fx-padding: 5px; */
+    
+    
+}
+.text-field:focused
+{
+    
+    -fx-border-color: #A5CDA5;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+    -fx-background-color: #E9F3E9;
+    -fx-text-fill: #428C42;
+    -fx-effect: dropshadow(three-pass-box, rgba(204,204,204,0.9), 10, 0, 0, 0);
+}
+
+/* G³ówna aplikacja */
+#searchButton
+{
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-background-color:  #36B03C;
+    -fx-padding: 5px;
+    -fx-background-radius: 25px;
+    -fx-cursor: hand;
+    -fx-spacing: 5px;
+    
+}
+
+#addToCartbutton
+{
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-background-color:  #36B03C;
+    -fx-padding: 5px;
+    -fx-background-radius: 25px;
+    -fx-cursor: hand;
+    -fx-spacing: 5px;
+    
+    
+}
+#payButton
+{   -fx-font-weight: bold;
+    -fx-text-alignment: center;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-background-color:  #36B03C;
+    -fx-padding: 10px;
+    -fx-background-radius: 25px;
+    -fx-cursor: hand;
+    -fx-spacing: 5px;
+    
+    }
+#refreshButton, #clearButton, #deletePositionButton
+{
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-background-color:  #36B03C;
+    -fx-padding: 5px;
+    -fx-background-radius: 25px;
+    -fx-cursor: hand;
+    -fx-spacing: 5px;
+    
+    
+}
+
+.menu-bar
+{
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+    -fx-text-fill: #36B03C;
+    -fx-font-size: 12px;
+    /*-fx-alignment: left;*/
+    -fx-alignment: center-left;
+    
+}
+.menu-button .label
+{
+    -fx-font-weight: normal;
+    -fx-text-alignment: center;
+    -fx-text-fill: #36B03C;
+    -fx-font-size: 12px;
+    -fx-alignment: center-left; 
+}
+.menu-bar .menu-button:hover, .menu-bar .menu-button:focused, .menu-bar .menu-button:showing
+{
+    -fx-background-color: #e6dfdc;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(204,204,204,0.9), 10, 0, 0, 0);
+}
+
+.menu-item .label
+{
+    -fx-font-weight: normal;
+    -fx-text-alignment: center;
+    -fx-text-fill: #36B03C;
+    -fx-font-size: 12px;
+    -fx-alignment: center-left;
+}
+
+.menu-item .label:hover, .menu-item:hover, .menu-item:focused,menu-item:active
+{
+    -fx-background-color: #e6dfdc;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(204,204,204,0.9), 10, 0, 0, 0);
+
+    
+}
+
+.combo-box
+{
+   -fx-background-color: #EFEFEF;
+    -fx-text-fill: #666666;
+    -fx-border-color: #DDDDDD;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    
+}
+.combo-box-base .text{
+    -fx-fill: #666666;
+}
+
+.combo-box:focused
+{
+   -fx-border-color: #A5CDA5;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+    -fx-background-color: #E9F3E9;
+    -fx-text-fill: #428C42;
+    -fx-effect: dropshadow(three-pass-box, rgba(204,204,204,0.9), 10, 0, 0, 0);
+}
+#basketLabel
+{
+    -fx-font-size: 24px;
+}
+#total
+{
+    -fx-alignment: center-left;
+    -fx-font-size: 24px;
+}
+#totalField
+{
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}
+
+.table-column {
+  -fx-alignment: CENTER;
+}
+
+/*
+ EKRAN ZMIANY DANYCH W KONCIE
+*/
+#changesNotSaved
+{
+    -fx-text-fill: red;
+    
+}
+
+/*
+Admin panel
+*/
+.bookEditFIeld
+{
+    -fx-background-color: white;
+    
+}
+
+.check-box
+{
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+    -fx-text-fill: #36B03C;
+    -fx-font-size: 12px;
+    -fx-cursor: hand;
+
+    -fx-mark-color: #36B03C;
+    
+}
+
+.adminButton
+{
+    -fx-text-alignment: center;
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-background-color:  #36B03C;
+    -fx-padding: 5px;
+    -fx-background-radius: 25px;
+    -fx-cursor: hand;
+    -fx-spacing: 5px;
+    
+}
+
+.adminInfo
+{
+    -fx-text-fill: red;
+    
+}
