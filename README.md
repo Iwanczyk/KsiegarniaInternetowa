@@ -29,7 +29,7 @@
    <details>
        <summary>Ekran logowania </summary>
 	
-![alt text](https://github.com/Iwanczyk/KsiegarniaInternetowa/tree/main/img/login.PNG "Ekran logowania")
+![alt text](https://github.com/Iwanczyk/KsiegarniaInternetowa/blob/main/img/login.PNG "Ekran logowania")
 
            Screen przedstawiający ekran logowania/rejestracji użytkownika
 	   
@@ -40,35 +40,38 @@
    <details>
        <summary>Ekran główny</summary>
 
-![alt text](https://github.com/Iwanczyk/KsiegarniaInternetowa/tree/main/img/ekranGlowny1.PNG "Ekran główny")
+![alt text](https://github.com/Iwanczyk/KsiegarniaInternetowa/blob/main/img/ekranGlowny1.PNG "Ekran główny")
 
            Screen przedstawiający główną część aplikacji
 	   
    <p>Po ukończeniu procesu logowania/rejestracji oczom użytkownika ukazuje się główna część aplikacji umożliwiająca dokonywanie zakupu wybranych książek. Asortyment załadowany zostaje z bazy danych. Każda pozycja jest opisana przez: 
-     * Tytuł
-     * Autora
-     * Gatunek
-     * Dostępność
-     * Cenę
+	<ul>   
+     <li> Tytuł </li>
+     <li> Autora</li>
+     <li> Gatunek</li>
+     <li> Dostępność</li>
+     <li> Cenę</li>
+	</ul>
+	   
   </p>
   
-![alt text](https://github.com/Iwanczyk/KsiegarniaInternetowa/tree/main/img/ekranGlowny2.PNG "Ekran główny")
+![alt text](https://github.com/Iwanczyk/KsiegarniaInternetowa/blob/main/img/ekranGlowny2.PNG "Ekran główny")
 
            Screen przedstawiający listę umożlwiającą sortowanie książeg według gatunku
   
   <p>Użytkownik ma także możliwość sortowania asortymentu poprzez gatunek, jaki go interesuje. Aby tego dokonać należy rozwinąć listę, gdzie znajdują się wszystkie gatunki, jakie sklep ma aktualnie w swoim asortymencie (dane te zostają załadowane z bazy danych). Po wybraniu odpowiedniego gatunku oraz kliknięciu przycisku "Wyszukaj" w tabeli pojawią się jedynie książki z wybranego gatunku</p>
   
-![alt text](https://github.com/Iwanczyk/KsiegarniaInternetowa/tree/main/img/ekranGlowny3.PNG "Ekran główny - Horror")
+![alt text](https://github.com/Iwanczyk/KsiegarniaInternetowa/blob/main/img/ekranGlowny3.PNG "Ekran główny - Horror")
   
           Screen przedstawiający przykładowe sortowanie według gatunku "Horror"
   
- ![alt text](https://github.com/Iwanczyk/KsiegarniaInternetowa/tree/main/img/ekranGlowny4.PNG "Ekran główny - Wyszukiwarka")
+ ![alt text](https://github.com/Iwanczyk/KsiegarniaInternetowa/blob/main/img/ekranGlowny4.PNG "Ekran główny - Wyszukiwarka")
 
            Screen przedstawiający działanie wyszukiwarki w połączeniu z sortowaniem według gatunku
   
   <p>Użytkownik ma także do dyspozycji wyszukiwarkę pozycji, która umożliwia szukanie książek po tytule lub autorze. Wyszukiwarka jest w stanie odnaleźć daną pozycję po fragmencie tytułu lub fragmencie imienia, czy nazwiska autora. Wyszukiwanie działa w połączeniu z listą sortującą gatunki. Na przedstawionym powyżej screenie użytkownik szuka książki zawierającej w swoim opisie słowo "Zew", która będzie z gatunku "Horror". </p> 
   
-  ![alt text](https://github.com/Iwanczyk/KsiegarniaInternetowa/tree/main/img/ekranGlowny5.PNG "Ekran główny - Wyszukiwarka")
+  ![alt text](https://github.com/Iwanczyk/KsiegarniaInternetowa/blob/main/img/ekranGlowny5.PNG "Ekran główny - Wyszukiwarka")
 
            Screen przedstawiający działanie wyszukiwarki
   
@@ -79,22 +82,24 @@
    <details>
        <summary>Menu użytkownika</summary>
 
-![alt text](https://github.com/Iwanczyk/KsiegarniaInternetowa/tree/main/img/menu1.PNG "Ekran główny - Menu użytkownika")
+![alt text](https://github.com/Iwanczyk/KsiegarniaInternetowa/blob/main/img/menu1.PNG "Ekran główny - Menu użytkownika")
 
            Screen przedstawiający pasek menu
 	   
    <p>W górnej części aplikacji znajduje się interaktywne menu, które umożliwia użytkownikowi wykonanie działań takich jak:
-  * Zamknięcie programu.  (Program -> Zamknij program)
-  * Edycja danych konta.  (Konto -> Edytuj dane)
-  * Usunięcie konta.      (Konto -> Usuń konto)
-  * Wyświetlenie koszyka. (Koszyk -> Pokaż koszyk)
-  * Zapisanie koszyka w bazie danych. (Koszyk -> Zapisz koszyk)
-  * Otwarcie zapisanego koszyka.      (Koszyk -> Otwórz koszyk)
-  * Uzyskanie informacji na temat aplikacji. (Pomoc -> O programie i autorach)
-  * Otworzenie instrukcji obsługi aplikacji. (Pomoc -> Instrukcja)
+	   <ul>
+  <li> Zamknięcie programu.  (Program -> Zamknij program) </li>
+  <li> Edycja danych konta.  (Konto -> Edytuj dane) </li>
+  <li> Usunięcie konta.      (Konto -> Usuń konto) </li>
+  <li> Wyświetlenie koszyka. (Koszyk -> Pokaż koszyk) </li>
+  <li> Zapisanie koszyka w bazie danych. (Koszyk -> Zapisz koszyk) </li>
+  <li> Otwarcie zapisanego koszyka.      (Koszyk -> Otwórz koszyk) </li>
+  <li> Uzyskanie informacji na temat aplikacji. (Pomoc -> O programie i autorach) </li>
+  <li> Otworzenie instrukcji obsługi aplikacji. (Pomoc -> Instrukcja) </li>
+	</ul>
   </p>
   
-  ![alt text](https://github.com/Iwanczyk/KsiegarniaInternetowa/tree/main/img/menu2.PNG "Ekran główny - Menu użytkownika")
+  ![alt text](https://github.com/Iwanczyk/KsiegarniaInternetowa/blob/main/img/menu2.PNG "Ekran główny - Menu użytkownika")
 
            Screen przedstawiający edycję danych konta
 	   
@@ -106,29 +111,31 @@
 <details>
        <summary>Koszyk</summary>
 
-![alt text](https://github.com/Iwanczyk/KsiegarniaInternetowa/tree/main/img/koszyk.PNG "Ekran główny - Koszyk")
+![alt text](https://github.com/Iwanczyk/KsiegarniaInternetowa/blob/main/img/koszyk1.PNG "Ekran główny - Koszyk")
 
            Screen przedstawiający przykładowy koszyk użytkownika wraz z jego zawartością
 	   
    <p>Użytkownik, po wybraniu interesujących go pozycji, może przejść do ekranu "Koszyk", gdzie zobaczy podsumowanie swojego wyboru (Tytuł, Autor, Cena) wraz z ilością wybranych książek. Na dole tego ekranu znajduje się informacja o koszcie zamówienia, która jest obliczana na bieżąco przy dodawaniu lub odejmowaniu kolejnych pozycji w koszyku. Do dyspozycji użytkownika są także przyciski:
-  * Złóż zamówienie - aktualnie przycisk jedynie dziękuje za złożone zamówienie i usuwa zawartośc koszyka <b>(w planach jest dodanie symulowanych metod płatności oraz ekranu dostawy)</b>.
-  * Odśwież koszyk - odświeżenie zawartości koszyka oraz ponowne przeliczenie kosztów zamówienia.
-  * Usuń z koszyka - umożliwia usunięcie wybranej pozycji z koszyka.
-  * Wyczyść zawartość - usunięcie wszystkich pozycji w koszyku oraz wyzerowanie kosztu zamówienia.
+	   <ul>
+  <li> Złóż zamówienie - aktualnie przycisk jedynie dziękuje za złożone zamówienie i usuwa zawartośc koszyka <b>(w planach jest dodanie symulowanych metod płatności oraz ekranu dostawy)</b>. </li>
+  <li> Odśwież koszyk - odświeżenie zawartości koszyka oraz ponowne przeliczenie kosztów zamówienia. </li>
+  <li> Usuń z koszyka - umożliwia usunięcie wybranej pozycji z koszyka. </li>
+  <li> Wyczyść zawartość - usunięcie wszystkich pozycji w koszyku oraz wyzerowanie kosztu zamówienia. </li>
+	</ul>
   </p>
    </details>
    
    <details>
        <summary>Ekran Panelu Admina</summary>
 
-![alt text](https://github.com/Iwanczyk/KsiegarniaInternetowa/tree/main/img/adminPanel1.PNG "Admin Panel")
+![alt text](https://github.com/Iwanczyk/KsiegarniaInternetowa/blob/main/img/adminPanel1.PNG "Admin Panel")
 
            Screen przedstawiający panel administratora.
 	   
    <p>Aplikacja posiada także panel administratora, aby się do niego dostać należy przy logowaniu wpisać w polu login: <b>admin</b>, a w polu hasło: <b>admin</b>(w planach jest weryfikacja danych admina poprzez dane pochodzące z bazy danych oraz rozszerzenie odpowiednich kont o role - Administracja, Moderacja, Użytkownik).</p>
   <p>Panel administratora umożliwia zarządzanie asortymentem sklepu (wyświetlenie asortymentu, dodawanie pozycji oraz edycja i usuwanie książek zarówno w asortymencie, jak i bazie danych).</p>
   
-  ![alt text](https://github.com/Iwanczyk/KsiegarniaInternetowa/tree/main/img/adminPanel2.PNG "Admin Panel")
+  ![alt text](https://github.com/Iwanczyk/KsiegarniaInternetowa/blob/main/img/adminPanel2.PNG "Admin Panel")
 	   
    <p>Analogicznie, administrator może zarządzać użytkownikami, którzy posiadają konto. Admin może dodawać, usuwać i edytować konta użytkowników. (W planach jest poprawa bezpieczeństwa aplikacji oraz wrażliwych danych użytkowników)</p>
    </details>
@@ -136,6 +143,6 @@
    
 ### Baza danych
 ####	Diagram ERD
-![alt text](https://github.com/Iwanczyk/KsiegarniaInternetowa/tree/main/img/ERD.PNG "Diagram ERD")
+![alt text](https://github.com/Iwanczyk/KsiegarniaInternetowa/blob/main/img/ERD.PNG "Diagram ERD")
 
 ####	W plikach znajduje się kopia bazy danych (database.sql)
